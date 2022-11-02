@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        />
+
+    <EditText
+        android:id="@+id/et_nama_lengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/et_nomor_pendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="number"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi Pendaftaran Dari :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+
+    <CheckBox
+        android:id="@+id/Facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook" />
+
+    <CheckBox
+        android:id="@+id/Instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram" />
+
+    <CheckBox
+        android:id="@+id/Twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+
+
+
+
+
+
+</LinearLayout>
