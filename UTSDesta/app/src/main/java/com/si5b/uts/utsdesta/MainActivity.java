@@ -35,6 +35,28 @@ private TextView tvFormulirPendaftaran, tvInformasi;
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String namalengkap, nomorpendaftaran;
+                int selectedID;
+
+                namalengkap = etNamaLengkap.getText().toString();
+                nomorpendaftaran= etNomorPendaftaran.getText().toString();
+
+                if (namalengkap.trim().equals("")){
+                    etNamaLengkap.setError("Nama tidak boleh kosong");
+                }
+                else if (nomorpendaftaran.trim().equals("")){
+                    etNomorPendaftaran.setError("Nomor tidak boleh kosong");
+                }
+                else if (!cbFacebook.isChecked()&&!cbInstagram.isChecked()&&!cbWebsite.isChecked()){
+                    Toast.makeText(getApplicationContext(),"harus pilih setidaknya satu", Toast.LENGTH_SHORT).show();
+
+                }
+                else{
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    intent.putExtra("varNamaLengkap", namalengkap);
+                    intent.putExtra("varNomorPendaftaran", nomorpendaftaran);
+                    startActivity(intent);
+                }
 
 
 
