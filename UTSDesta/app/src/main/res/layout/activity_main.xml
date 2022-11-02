@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_formulir_pendaftaran"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FORMULIR PENDAFTARAN"
@@ -38,6 +39,7 @@
         android:textColor="#000000"
         />
     <TextView
+        android:id="@+id/tv_informasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Informasi Pendaftaran Dari :"
@@ -47,28 +49,28 @@
         />
 
     <CheckBox
-        android:id="@+id/Facebook"
+        android:id="@+id/cb_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Facebook" />
 
     <CheckBox
-        android:id="@+id/Instagram"
+        android:id="@+id/cb_instagram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Instagram" />
 
     <CheckBox
-        android:id="@+id/Twitter"
+        android:id="@+id/cb_website"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Twitter" />
+        android:text="Website" />
 
     <Button
         android:id="@+id/btn_daftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DAFTAR"
+        android:text="DAFTAR"/>
 
 
 
